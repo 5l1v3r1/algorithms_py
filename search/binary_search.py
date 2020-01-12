@@ -5,7 +5,6 @@ def find(x, l):
     left = 0
     right = len(l) - 1
     while left <= right:
-        #print(l[left:right+1])
         mid = left + int((right - left) / 2)
         if l[mid] == x:
             return mid
