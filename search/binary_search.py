@@ -15,4 +15,4 @@ def find(x, l):
     return -1
 
 
-print(find(4, list(range(0, 100))))
+print(find(72, list(range(0, 100))))
