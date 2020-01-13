@@ -14,5 +14,22 @@ def find(x, l):
             left = mid + 1
     return -1
 
-
 print(find(72, list(range(0, 100))))
+
+# binary search problem:
+# find the square root of X using binary search
+def findsqrt(x, l):
+    left = 0
+    right = len(l) - 1
+    while left <= right:
+        mid = left + int((right - left) / 2)
+        if l[mid]*l[mid] == x:
+            return mid
+        elif x < l[mid]*l[mid]:
+            right = mid - 1
+        else:
+            left = mid + 1
+    return -1
+
+n = 16
+print(findsqrt(n, list(range(0, n + 1))))
