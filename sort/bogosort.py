@@ -1,5 +1,6 @@
 # implementation of the bogosort algorithm
 # extremely inefficient
+# Performance: O(n!)
 from random import shuffle
 
 def isSorted(l):

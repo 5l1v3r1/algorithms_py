@@ -31,5 +31,5 @@ def findsqrt(x, l):
             left = mid + 1
     return -1
 
-n = 16
-print(findsqrt(n, list(range(0, n + 1))))
+nums = range(0, 1001)
+print(list(filter(lambda n: False if findsqrt(n, nums) == -1 else True, nums)))
