@@ -6,7 +6,8 @@ def sort(l):
         for j in range(i+1, len(l)):
             if l[j] < l[min_ind]:
                 min_ind = j
+        #print(f"Swapping {l[i]} with {l[min_ind]}, {l}")
         l[i], l[min_ind] = l[min_ind], l[i]
     return l
 
-print(sort([3,2,4,1]))
+print(sort([9,1,3,2,8,4,5]))
